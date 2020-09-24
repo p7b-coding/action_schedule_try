@@ -1,0 +1,16 @@
+name: ogni2minuti
+# File: .github/workflows/pull-request.yml
+
+on:  
+  schedule:
+    - cron: '*/2 * * * *'
+ 
+jobs:
+  ogni2minutijob:
+    runs-on: ubuntu-latest
+    steps:
+      - shell: bash
+        run: |
+          echo "Dajeeee"
+#          echo "Daje1 -- `curl -k ${{ secrets.URLVERS }}`"
+#          echo "Daje2 -- `curl -k ${{ secrets.URLVER }}`"
